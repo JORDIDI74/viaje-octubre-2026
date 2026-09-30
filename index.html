@@ -508,11 +508,15 @@ button.badge{border:0;padding:0;cursor:pointer}
 .bday{background:radial-gradient(70% 55% at 50% 0%, rgba(216,182,126,.20), transparent 70%), var(--carbon)}
 .bday-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
 .bday h2 .gold{color:var(--champ-hi)}
-.air{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;border-radius:18px;border:1px solid var(--line-2);background:var(--carbon-2);padding:16px 18px;margin-top:20px}
-.air .clk{display:grid;gap:2px;text-align:center}
-.air .clk b{font-family:var(--f-display);font-weight:900;font-size:40px;line-height:1;color:var(--champ-hi)}
-.air .clk small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.air{display:grid;gap:12px;border-radius:18px;border:1px solid var(--line-2);background:var(--carbon-2);padding:18px 20px;margin-top:20px}
+.air .clk{display:flex;align-items:center;gap:14px}
+.air .clk b{font-family:var(--f-display);font-weight:900;font-size:clamp(46px,15vw,68px);line-height:.86;color:var(--champ-hi)}
+.air .clk .lb{display:grid;gap:6px;min-width:0}
+.air .clk small{font-size:11.5px;font-weight:700;line-height:1.2;letter-spacing:.16em;text-transform:uppercase;color:var(--ivory-dim)}
+.air .clk .fly{display:inline-flex;align-items:center;gap:6px;color:var(--champ-hi)}
+.air .clk .fly svg{width:13px;height:13px;flex:0 0 auto;transform:rotate(45deg)}
 .air p{font-size:15px;color:var(--ivory-dim)}
+.air p b{color:var(--ivory)}
 .bday-day{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:0}
 .bday-day li{display:grid;grid-template-columns:86px 1fr;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
 .bday-day li span:first-child{font:700 12px/1.3 var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:var(--champ-hi);padding-top:2px}
@@ -1249,8 +1253,9 @@ footer .sig{font-family:var(--f-display);font-weight:800;font-size:22px;letter-s
           <h2>Cristina cumple <span class="gold">50</span></h2>
         </div>
         <div class="air">
-          <div class="clk"><b class="num">00:50</b><small>hora de Madrid</small></div>
-          <p><b style="color:var(--ivory)">Sus 50 empiezan en el aire.</b> A medianoche de Madrid aún estaremos volando hacia Washington. Aterrizamos en Dulles a las 18:50, cuando en España ya son las 00:50 del día 2.</p>
+          <div class="clk"><b class="num">00:00</b><span class="lb"><small>Hora de Madrid</small><small class="fly"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c.9 0 1.5.9 1.5 2v5.2l7.5 4.3v2l-7.5-2.2v4.6l2.2 1.6v1.6L12 20l-3.7 1.1v-1.6l2.2-1.6v-4.6L3 15.5v-2l7.5-4.3V4c0-1.1.6-2 1.5-2z"/></svg>En vuelo</small></span></div>
+          <p class="num"><b>Sus 50 empiezan en el aire.</b> A medianoche de Madrid (las 18:00 en Washington) seguiremos volando. Aterrizaje previsto en Dulles a las 18:50, las 00:50 en España.</p>
+          <p class="num">En Washington su día 2 empieza seis horas más tarde, así que tiene <b>30 horas de cumpleaños</b>.</p>
         </div>
         <ol class="bday-day">
           <li><span>Mañana</span><span><b>Se despierta en Washington</b>, en el Riggs. Desayuno en el Café Riggs, en el vestíbulo del antiguo banco, o subida al Washington Monument, que abre a las 9:00. <span class="prop">Propuesta</span> La salida del hotel es hasta las 12:00.</span></li>
