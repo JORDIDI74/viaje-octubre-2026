@@ -718,6 +718,21 @@ footer .sig{font-family:var(--f-display);font-weight:800;font-size:22px;letter-s
 .cq p a{white-space:nowrap;font-size:13px}
 @media (max-width:760px){.curio{padding:20px 18px 8px}.cq-list{grid-template-columns:1fr}}
 
+/* ---------- YARDA 41 · el juego de las reglas ---------- */
+.y41{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;border-radius:22px;border:1px solid rgba(31,165,74,.42);background:linear-gradient(120deg,rgba(31,165,74,.17),rgba(31,165,74,.03) 58%),var(--carbon-2);padding:20px 22px;min-width:0}
+.y41-ic{width:60px;height:60px;border-radius:17px;background:var(--herd-deep);border:1px solid rgba(95,214,138,.35);display:grid;place-items:center}
+.y41-ic svg{width:36px;height:36px}
+.y41-tx{display:grid;gap:7px;min-width:0}
+.y41-tx h3{font-size:clamp(28px,5vw,34px)}
+.y41-tx h3 b{color:var(--herd-hi);font-weight:800}
+.y41-tx p{font-size:15px;color:var(--ivory-dim)}
+.y41-go{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15px/1 var(--f-body);letter-spacing:.02em;color:#06210f;background:var(--herd-hi);border-radius:999px;padding:15px 22px;text-decoration:none;white-space:nowrap}
+.y41-go:hover{background:#7fe6a4}
+.btn.play{border-color:rgba(95,214,138,.55);color:var(--herd-hi)}
+@media (max-width:760px){
+  .y41{grid-template-columns:auto 1fr;padding:18px}
+  .y41-go{grid-column:1/-1}
+}
 /* ---------- MÓVIL ---------- */
 @media (max-width:860px){
   .dc-grid{grid-template-columns:1fr}
@@ -1349,6 +1364,15 @@ footer .sig{font-family:var(--f-display);font-weight:800;font-size:22px;letter-s
           </ul>
           <div class="links"><a class="btn" href="https://jmusports.com/news/2026/8/12/updates-for-jmu-football-game-days-in-2026" target="_blank" rel="noopener">Novedades del game day</a></div>
         </article>
+        <article class="y41">
+          <div class="y41-ic" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none" stroke="#d8b67e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4v15h20V4M18 19v13"/><ellipse cx="18" cy="10" rx="5" ry="3.2" transform="rotate(-28 18 10)" stroke="#5fd68a" stroke-width="2.2"/></svg></div>
+          <div class="y41-tx">
+            <span class="eyebrow">Antes del partido</span>
+            <h3>Yarda <b>41</b></h3>
+            <p>Un juego para aprender las reglas del football universitario: lecciones de tres minutos, las señales del árbitro y field goals para chutar como el 41.</p>
+          </div>
+          <a class="y41-go" href="https://jordidi74.github.io/yarda-41/" target="_blank" rel="noopener">Jugar ahora</a>
+        </article>
         <article class="card">
           <span class="eyebrow">Para el viernes 2 <span class="prop">Propuesta</span></span>
           <h3>Skyline Drive</h3>
@@ -1474,6 +1498,7 @@ footer .sig{font-family:var(--f-display);font-weight:800;font-size:22px;letter-s
             <a class="btn" href="https://www.espn.com/college-football/player/_/id/5294118/jorge-diaz-nicolas" target="_blank" rel="noopener">Su ficha en ESPN</a>
             <a class="btn" href="https://herdzone.com/documents/download/2026/9/26/47912.PDF" target="_blank" rel="noopener">Acta oficial del partido</a>
             <a class="btn" href="https://jordidi74.github.io/el-kicker-espanol/" target="_blank" rel="noopener">El Kicker Español</a>
+            <a class="btn play" href="https://jordidi74.github.io/yarda-41/" target="_blank" rel="noopener">Yarda 41: aprende las reglas</a>
           </div>
         </div>
       </div>
